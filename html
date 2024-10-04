@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Header Example</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      background-color: rgba(255, 105, 180, 0.7);
+      padding: 10px;
+      text-align: center;
+      position: fixed; 
+      top: 0;
+      width: 100%;
+      z-index: 2; 
+    }
+
+    nav a {
+      color: white;
+      padding: 10px 15px;
+      text-decoration: none;
+      font-size: 18px;
+      font-family: Arial, sans-serif;
+      display: inline-block;
+    }
+
+    nav a:hover {
+      background-color: rgba(255, 105, 180, 0.5);
+      color: white;
+    }
+
+    .image-container {
+      position: relative;
+      top: 0;
+      width: 100%;
+      margin-top: 50px;
+    }
+
+    img {
+      width: 100%; 
+      height: 110vh;
+      object-fit: cover;
+      display: block;
+    }
+
+    #about {
+      text-align: center; 
+      margin: 20px 0;
+      font-size: 24px;
+      font-family: 'Arial Black', sans-serif;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .subtext {
+      text-align: center;
+      font-size: 18px;
+      font-family: Verdana, sans-serif;
+      color: #555;
+      margin-bottom: 5px;
+    }
+
+    .box-container {
+      display: flex;
+      justify-content: space-around;
+      padding: 40px;
+      margin-top: 60px;
+      height: calc(100vh - 60px);
+      align-items: center;
+    }
+
+    .box {
+      width: 30%;
+      background-color: #f4f4f4;
+      padding: 15px;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .box img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .box p {
+      margin-top: 10px;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      color: #333;
+    }
+
+    #store {
+      padding: 40px;
+      background-color: #f9f9f9;
+      height: 80vh;
+      margin-top: 20px;
+      text-align: center;
+      font-family: Verdana, sans-serif;
+      color: #888888;
+    }
+
+    .store-image-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 20px;
+      height: 100%;
+    }
+
+    .store-image {
+      width: 250px;
+      height: 450px;
+      background-color: #ddd;
+      border-radius: 15px;
+      margin: 1px;
+      overflow: hidden;
+    }
+
+    .store-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+
+    @media (max-width: 768px) {
+      .box-container, .store-image-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .box, .store-image {
+        width: 80%;
+        margin-bottom: 20px;
+      }
+    }
+
+    body {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="#banner">About</a>
+  <a href="#product">Products</a>
+  <a href="#store">Store</a>
+  <a href="#feedback">Feedback</a>
+</nav>
+
+<div class="image-container" id="banner">
+  <img src="https://pimwp.s3-accelerate.amazonaws.com/2024/09/Laneige-New-Lip-Glowy-Balms-scaled.jpg" alt="Banner Image">
+</div>
+
+<div class="box-container" id="product">
+  <p id="about">KEY INGREDIENTS</p>
+  <p class="subtext">Packed with ingredients your lips will love</p>
+  
+  <div class="box">
+    <img src="https://www.shutterstock.com/shutterstock/videos/3437177873/thumb/1.jpg?ip=x480" alt="Image 1">
+    <p>Vitamin C</p>
+    <p>Melts away dead skin cells for a smoother lip</p>
+  </div>
+  
+  <div class="box">
+    <img src="https://ethique.co.nz/cdn/shop/articles/What-is-hyaluronic-acid.jpg?v=1632435517" alt="Image 2">
+    <p>Hyaluronic Acid</p>
+    <p>Delivers effective, long-lasting hydration</p> 
+  </div>
+  
+  <div class="box">
+    <img src="https://t4.ftcdn.net/jpg/03/72/52/21/360_F_372522135_GxeNtOY3oKtQjwxR7gCuZtYn341ufs3m.jpg" alt="Image 3">
+    <p>Avocado Oil</p>
+    <p>Increases moisture levels in the skin, making it plumper and softer.</p>
+  </div>
+</div>
+
+<div id="store">
+  <h2>Products</h2>
+  <p>View our fun and exciting flavors to offer</p>
+  
+  <div class="store-image-container">
+    <div class="store-image">
+      <img src="https://i.pinimg.com/736x/89/4e/bd/894ebd784915c17acace2e952922ece6.jpg" alt="Store Image 1">
+    </div>
+    <div class="store-image">
+      <img src="https://i.pinimg.com/736x/fa/97/22/fa9722180e871cf15fdeac391eec8c53.jpg" alt="Store Image 2">
+    </div>
+    <div class="store-image">
+      <img src="https://www.distacart.com/cdn/shop/files/download-2024-04-19T145614.549_1280x.jpg?v=1713518824" alt="Store Image 3">
+    </div>
+    <div class="store-image">
+      <img src="https://i.pinimg.com/736x/f3/5a/98/f35a9838b3cd8c03835888f9818e3d52.jpg" alt="Store Image 4">
+    </div>
+  </div>
+</div>
+
+<div id="feedback" style="margin-top: 20px; padding: 20px; background-color: #f9f9f9;">
+  <h2>Feedback Section</h2>
+  <p>To be added...</p>
+</div>
+
+</body>
+</html>
